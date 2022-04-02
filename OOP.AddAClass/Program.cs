@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP.AddAClass
 {
@@ -6,27 +7,20 @@ namespace OOP.AddAClass
     {
         static void Main(string[] args)
         {
-            Employee employee = new Employee();
-            employee.FirstName = "Ümit";
-            employee.LastName = "Şahin";
-            employee.Age = 30;
-            //Console.WriteLine(employee.FirstName);
-            //Console.WriteLine(employee.LastName);
-            //Console.WriteLine(employee.Age);
-            Console.WriteLine(employee);
+            var list = new List<Employee>()
+            {
+                new Employee(){FirstName = "Ümit",LastName = "Şahin",Age = 30 },
+                new Employee("Mevlüt", "Ateş", 35),
+                new Employee("Adil","Deniz",35)
+            };
+            
+           
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
-            Console.WriteLine("------------");
-
-            Employee employee2 = new Employee("Mevlüt", "Ateş", 35);
-            //Console.WriteLine(
-            //    $"{employee2.FirstName} " 
-            //    +$"{employee2.LastName} " 
-            //    +$"{employee2.Age}");
-            Console.WriteLine(employee2);
-
-            Employee employee3 = new Employee("Adil","Deniz",35);
-
-            Console.WriteLine(employee3);
+         
         }
     }
 }

@@ -30,7 +30,7 @@
         //Constructor
         public Employee()
         {
-            System.Console.WriteLine("Yapılandırıcı metot....");
+          
         }
 
         //Overloading
@@ -43,7 +43,7 @@
 
         public override string ToString()
         {
-            return $"{FirstName} {LastName} {Age}";
+            return $"{FirstName,-20} {LastName,-15} {Age,5}";
         }
     }
 }
