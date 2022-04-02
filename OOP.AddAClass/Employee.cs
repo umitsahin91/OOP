@@ -23,5 +23,8 @@
             get => _lastName; 
             set => _lastName = value; 
         }
+
+        //Auto-implemented propperty
+        public int Age { get; set; }
     }
 }
