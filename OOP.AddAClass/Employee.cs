@@ -53,5 +53,10 @@ namespace OOP.AddAClass
         {
             _list.Add(employee);
         }
+
+        public void AddRAnge(params Employee[] employees)
+        {
+            _list.AddRange(employees);
+        }
     }
 }
