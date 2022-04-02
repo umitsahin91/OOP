@@ -11,15 +11,16 @@ namespace OOP.Inheritance
             {
                 new Rectangle(),
                 new Triangle(),
-                new Circle()
+                new Circle(),
+                new Square()
             };
 
             foreach (var shape in shapes)
             {
                 shape.Draw();
             }
+            new Square().Calculate();
             
-
         }
 
         private static void VirtualKeyword()

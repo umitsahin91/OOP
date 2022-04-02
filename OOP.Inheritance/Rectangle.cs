@@ -7,6 +7,10 @@
             System.Console.WriteLine("Rectangle drawing task...");
             //base.Draw();
         }
+        public void Calculate()
+        {
+            System.Console.WriteLine("Calculated by Rectangle...");
+        }
     }
 
 }
