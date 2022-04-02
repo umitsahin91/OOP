@@ -22,6 +22,20 @@
         {
             System.Console.WriteLine("Base class drawing task...");
         }
+
+        public void WorkWithDifferentObjects(object o)
+        {
+            //Shape shapeFromParameter = o as Shape;
+            //if (shapeFromParameter!=null)
+            //{
+            //    shapeFromParameter.Draw();
+            //}
+            if (o is Shape)
+            {
+                //with..
+            }
+           
+        }
     }
 
 }

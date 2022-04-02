@@ -19,6 +19,8 @@ namespace OOP.Inheritance
             var s4 = new Square(10, 20);
             Console.WriteLine("{0},{1}", s4.X, s4.Y);
 
+            s1.WorkWithDifferentObjects(s1);
+
         }
 
         private static void Polymorphism()
