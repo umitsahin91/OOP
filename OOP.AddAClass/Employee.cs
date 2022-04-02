@@ -41,7 +41,9 @@
             Age = age;
         }
 
-       
-
+        public override string ToString()
+        {
+            return $"{FirstName} {LastName} {Age}";
+        }
     }
 }

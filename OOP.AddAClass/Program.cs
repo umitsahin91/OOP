@@ -10,17 +10,23 @@ namespace OOP.AddAClass
             employee.FirstName = "Ümit";
             employee.LastName = "Şahin";
             employee.Age = 30;
-            Console.WriteLine(employee.FirstName);
-            Console.WriteLine(employee.LastName);
-            Console.WriteLine(employee.Age);
+            //Console.WriteLine(employee.FirstName);
+            //Console.WriteLine(employee.LastName);
+            //Console.WriteLine(employee.Age);
+            Console.WriteLine(employee);
 
             Console.WriteLine("------------");
 
-            Employee employee2 = new Employee("Mevlüt0", "Ateş", 35);
-            Console.WriteLine(employee2.FirstName);
-            Console.WriteLine(employee2.LastName);
-            Console.WriteLine(employee2.Age);
+            Employee employee2 = new Employee("Mevlüt", "Ateş", 35);
+            //Console.WriteLine(
+            //    $"{employee2.FirstName} " 
+            //    +$"{employee2.LastName} " 
+            //    +$"{employee2.Age}");
+            Console.WriteLine(employee2);
 
+            Employee employee3 = new Employee("Adil","Deniz",35);
+
+            Console.WriteLine(employee3);
         }
     }
 }
