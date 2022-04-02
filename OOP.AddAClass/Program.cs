@@ -9,7 +9,7 @@ namespace OOP.AddAClass
         {
 
             var employee = new Employee();
-            employee.Add(new Employee("Ümit", "Şahin", 30));
+            employee.Add(new Employee() { FirstName = "Ümit", LastName = "Şahin", Age = 30 });
             employee.AddRAnge(
                     new Employee("Mevlüt", "Ateş", 35),
                     new Employee("Adil", "Deniz", 35),
@@ -18,6 +18,12 @@ namespace OOP.AddAClass
                     new Employee("Onur", "Coşkun", 35)
                              );
 
+            var list = employee.GetEmployees();
+
+            foreach (var e in list)
+            {
+                Console.WriteLine(e);
+            }
 
 
 

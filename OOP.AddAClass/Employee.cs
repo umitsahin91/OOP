@@ -29,11 +29,12 @@ namespace OOP.AddAClass
 
         //Auto-implemented propperty
         public int Age { get; set; }
+        public List<Employee> Employees => GetEmployees();
 
         //Constructor
         public Employee()
         {
-            _list = new List<Employee>(); 
+            _list = new List<Employee>();
         }
 
         //Overloading
@@ -42,6 +43,7 @@ namespace OOP.AddAClass
             FirstName = firstName;
             LastName = lastName;
             Age = age;
+            _list = new List<Employee>();
         }
 
         public override string ToString()
@@ -58,5 +60,8 @@ namespace OOP.AddAClass
         {
             _list.AddRange(employees);
         }
+
+        public List<Employee> GetEmployees() => _list;
+
     }
 }
