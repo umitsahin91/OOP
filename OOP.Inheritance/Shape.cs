@@ -8,7 +8,7 @@
         public int Height { get; set; }
         public int Width { get; set; }
 
-        public void Draw()
+        public virtual void Draw()
         {
             System.Console.WriteLine("Base class drawing task...");
         }

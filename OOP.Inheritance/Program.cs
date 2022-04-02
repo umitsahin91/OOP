@@ -19,6 +19,8 @@ namespace OOP.Inheritance
             Console.WriteLine("{0},{1}",_s2.X,_s2.Y);
             _s2.Draw();
 
+            new Triangle().Draw();
+
         }
     }
 }
