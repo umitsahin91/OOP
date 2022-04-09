@@ -8,7 +8,7 @@ namespace OOP.Inheritance
         static void Main(string[] args)
         {
             var s1 = new Rectangle(10, 20);
-            Console.WriteLine("{0},{1}",s1.X,s1.Y);
+            Console.WriteLine("{0},{1}", s1.X, s1.Y);
 
             var s2 = new Circle(10, 20);
             Console.WriteLine("{0},{1}", s2.X, s2.Y);
@@ -19,7 +19,7 @@ namespace OOP.Inheritance
             var s4 = new Square(10, 20);
             Console.WriteLine("{0},{1}", s4.X, s4.Y);
 
-            s1.WorkWithDifferentObjects(s1);
+           
 
         }
 

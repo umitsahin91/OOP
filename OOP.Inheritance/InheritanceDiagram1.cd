@@ -3,7 +3,7 @@
   <Class Name="OOP.Inheritance.Shape" Collapsed="true">
     <Position X="4.75" Y="1.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAABAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <HashCode>AAAAAAAABAAAAgAAAAAAAEAAAAAAAAAAAAAAAAAAYAg=</HashCode>
       <FileName>Shape.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,8 +35,8 @@
   <Class Name="OOP.Inheritance.Square" Collapsed="true">
     <Position X="1.75" Y="4.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Squre.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Square.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
