@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces", "OOP.Inter
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.IFormattables", "OOP.Interfaces.IFormattable\OOP.Interfaces.IFormattables.csproj", "{05458A3B-7850-4A0A-990D-5DC16045F3BA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interface.IClonable_App", "OOP.Interface.IClonable_App\OOP.Interface.IClonable_App.csproj", "{EC8D6003-F988-4FB4-964D-6B5DB7778781}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{05458A3B-7850-4A0A-990D-5DC16045F3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05458A3B-7850-4A0A-990D-5DC16045F3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05458A3B-7850-4A0A-990D-5DC16045F3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8D6003-F988-4FB4-964D-6B5DB7778781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8D6003-F988-4FB4-964D-6B5DB7778781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8D6003-F988-4FB4-964D-6B5DB7778781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8D6003-F988-4FB4-964D-6B5DB7778781}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
