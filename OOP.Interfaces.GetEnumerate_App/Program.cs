@@ -28,6 +28,8 @@ namespace OOP.Interfaces.GetEnumerate_App
             {
                 Console.WriteLine($"{enumerator.Current.ProductID} " + $"{enumerator.Current.ProductName} " + $"{enumerator.Current.Price} ");
             }
+            
+
         }
     }
 }
