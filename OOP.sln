@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.IEnumerableA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.LooselyCoupled", "OOP.Interfaces.LooselyCoupled\OOP.Interfaces.LooselyCoupled.csproj", "{F5CB81A4-F1C1-4017-8C78-C60864790680}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.InterfaceSegregation", "OOP.Interfaces.InterfaceSegregation\OOP.Interfaces.InterfaceSegregation.csproj", "{D1AA5B27-2BF2-4AEF-99D4-0BFFDF3AD10E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1AA5B27-2BF2-4AEF-99D4-0BFFDF3AD10E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1AA5B27-2BF2-4AEF-99D4-0BFFDF3AD10E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1AA5B27-2BF2-4AEF-99D4-0BFFDF3AD10E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1AA5B27-2BF2-4AEF-99D4-0BFFDF3AD10E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
