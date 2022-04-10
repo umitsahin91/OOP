@@ -9,19 +9,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Inheritance", "OOP.Inhe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.AbstractClassAndMethod", "OOP.AbstractClassAndMethod\OOP.AbstractClassAndMethod.csproj", "{46FA1010-D5DC-4A05-A1B2-3D362328ECFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces", "OOP.Interfaces\OOP.Interfaces.csproj", "{61493208-070E-4AAB-A288-90CCFCB9AC18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces", "OOP.Interfaces\OOP.Interfaces.csproj", "{61493208-070E-4AAB-A288-90CCFCB9AC18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.IFormattables", "OOP.Interfaces.IFormattable\OOP.Interfaces.IFormattables.csproj", "{05458A3B-7850-4A0A-990D-5DC16045F3BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.IFormattables", "OOP.Interfaces.IFormattable\OOP.Interfaces.IFormattables.csproj", "{05458A3B-7850-4A0A-990D-5DC16045F3BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interface.IClonable_App", "OOP.Interface.IClonable_App\OOP.Interface.IClonable_App.csproj", "{EC8D6003-F988-4FB4-964D-6B5DB7778781}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interface.IClonable_App", "OOP.Interface.IClonable_App\OOP.Interface.IClonable_App.csproj", "{EC8D6003-F988-4FB4-964D-6B5DB7778781}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.IComparableApp", "OOP.Interfaces.IComparableApp\OOP.Interfaces.IComparableApp.csproj", "{A63F8513-AB97-414B-98AD-67FCACE7DE35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.IComparableApp", "OOP.Interfaces.IComparableApp\OOP.Interfaces.IComparableApp.csproj", "{A63F8513-AB97-414B-98AD-67FCACE7DE35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.IComparable_T_App", "OOP.Interfaces.IComparable_T_App\OOP.Interfaces.IComparable_T_App.csproj", "{1410D8F0-71D2-4903-833F-4FE4E9EA8920}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.IComparable_T_App", "OOP.Interfaces.IComparable_T_App\OOP.Interfaces.IComparable_T_App.csproj", "{1410D8F0-71D2-4903-833F-4FE4E9EA8920}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.GetEnumerate_App", "OOP.Interfaces.GetEnumerate_App\OOP.Interfaces.GetEnumerate_App.csproj", "{91ED4ADD-CCA0-44CF-9F9D-18F1B3A4A503}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.GetEnumerate_App", "OOP.Interfaces.GetEnumerate_App\OOP.Interfaces.GetEnumerate_App.csproj", "{91ED4ADD-CCA0-44CF-9F9D-18F1B3A4A503}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.IEnumerableApp", "OOP.Interfaces.IEnumerableApp\OOP.Interfaces.IEnumerableApp.csproj", "{3F41C663-8F81-43B4-981E-30769A948019}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP.Interfaces.IEnumerableApp", "OOP.Interfaces.IEnumerableApp\OOP.Interfaces.IEnumerableApp.csproj", "{3F41C663-8F81-43B4-981E-30769A948019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.LooselyCoupled", "OOP.Interfaces.LooselyCoupled\OOP.Interfaces.LooselyCoupled.csproj", "{F5CB81A4-F1C1-4017-8C78-C60864790680}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{3F41C663-8F81-43B4-981E-30769A948019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F41C663-8F81-43B4-981E-30769A948019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F41C663-8F81-43B4-981E-30769A948019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5CB81A4-F1C1-4017-8C78-C60864790680}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
