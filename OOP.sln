@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Generics.ArrayApp", "OO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Generics.Methods", "OOP.Generics.Methods\OOP.Generics.Methods.csproj", "{22F28926-AEDA-464F-A3D0-B0B3008B2946}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.GenericRepositoryDesignPattern", "OOP.GenericRepositoryDesignPattern\OOP.GenericRepositoryDesignPattern.csproj", "{0B6C663F-A343-4705-8BED-F38613D9617C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B6C663F-A343-4705-8BED-F38613D9617C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B6C663F-A343-4705-8BED-F38613D9617C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B6C663F-A343-4705-8BED-F38613D9617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B6C663F-A343-4705-8BED-F38613D9617C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

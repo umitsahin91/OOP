@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OOP.GenericRepositoryDesignPattern.DAL.Concrete.BaseRepository&lt;T&gt;">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>DAL\Concrete\BaseRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOP.GenericRepositoryDesignPattern.DAL.Concrete.EmployeeDal">
+    <Position X="8.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Concrete\EmployeeDal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOP.GenericRepositoryDesignPattern.DAL.Concrete.ProductDal">
+    <Position X="11.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Concrete\ProductDal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOP.GenericRepositoryDesignPattern.Entities.Concrete.Employee">
+    <Position X="0.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAg=</HashCode>
+      <FileName>Entities\Concrete\Employee.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="OOP.GenericRepositoryDesignPattern.Entities.Concrete.Product">
+    <Position X="2.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoAAA=</HashCode>
+      <FileName>Entities\Concrete\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="OOP.GenericRepositoryDesignPattern.DAL.Abstract.IEmployeeDal">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Abstract\IEmployeeDal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OOP.GenericRepositoryDesignPattern.DAL.Abstract.IEntityRepository&lt;T&gt;">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAABAAAAAAAAAAAEAAEAAAgAAAAAAAAA=</HashCode>
+      <FileName>DAL\Abstract\IEntityRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OOP.GenericRepositoryDesignPattern.DAL.Abstract.IProductDal">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <InheritanceLine Type="OOP.GenericRepositoryDesignPattern.DAL.Abstract.IEntityRepository&lt;T&gt;" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.75" Y="2.373" />
+        <Point X="6.75" Y="3.375" />
+        <Point X="4.75" Y="3.375" />
+        <Point X="4.75" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DAL\Abstract\IProductDal.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OOP.GenericRepositoryDesignPattern.Entities.Abstract.IEntity" Collapsed="true">
+    <Position X="1.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Abstract\IEntity.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
