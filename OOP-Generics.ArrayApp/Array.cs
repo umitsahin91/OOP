@@ -4,6 +4,7 @@ using System.Linq;
 namespace OOP_Generics.ArrayApp
 {
     public class Array<T>:IEnumerable
+       where T:class,new()
     {
         private T[] InnerList;
         private int index;

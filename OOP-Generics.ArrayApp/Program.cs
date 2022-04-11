@@ -8,11 +8,38 @@ namespace OOP_Generics.ArrayApp
     {
         static void Main(string[] args)
         {
+            var arr1 = new Array<Book>(
+                new Book(1, "Suç ve Ceza", 30),
+                new Book(1, "Sefiller", 40),
+                new Book(1, "Devlet", 50)
+                );
+
+            var arr2 = new Array<Company>(
+                new Company(1,"Aselsan","Türkiye"),
+                new Company(2,"Trendyol","Türkiye"),
+                new Company(3,"Sahibinden","Türkiye")
+                );
+
+            foreach (var item in arr1)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.WriteLine(new string('-',30));
+
+            foreach (var item in arr2)
+            {
+                Console.WriteLine(item);
+            }
+
+        }
+
+        private static void GenericAndStruct()
+        {
             var stack = new Stack<Company>();
-            stack.Push(new Company(1,"Aselsan","Türkiye"));
+            stack.Push(new Company(1, "Aselsan", "Türkiye"));
 
             Console.WriteLine(stack.Peek());
-            
         }
 
         private static void GenericCollection()
