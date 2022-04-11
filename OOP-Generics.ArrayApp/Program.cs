@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace OOP_Generics.ArrayApp
@@ -7,8 +8,27 @@ namespace OOP_Generics.ArrayApp
     {
         static void Main(string[] args)
         {
+            var arr = new Array<char>('a', 'b', 'c');
+     
+            foreach (var item in arr)
+            {
+                Console.WriteLine(item);
+            }
+            var arrayList = new List<int>();
+            arrayList.Add(3);
+            arrayList.Add('a');
+           
+            foreach (var item in arrayList)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine((int)arrayList[1]*10);
+        }
+
+        private static void GenericAndCustomType()
+        {
             var list = new LinkedList<Book>();
-            list.AddFirst(new Book(1,"Sefiller",30));
+            list.AddFirst(new Book(1, "Sefiller", 30));
             list.AddFirst(new Book(2, "Suç ve Ceza", 40));
             list.AddFirst(new Book(3, "Devlet", 50));
             foreach (var item in list)
