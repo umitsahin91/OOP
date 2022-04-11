@@ -14,11 +14,11 @@ namespace OOP_Generics.ArrayApp
                 new Book(1, "Devlet", 50)
                 );
 
-            var arr2 = new Array<Company>(
-                new Company(1,"Aselsan","Türkiye"),
-                new Company(2,"Trendyol","Türkiye"),
-                new Company(3,"Sahibinden","Türkiye")
-                );
+            //var arr2 = new Array<Company>(
+            //    new Company(1,"Aselsan","Türkiye"),
+            //    new Company(2,"Trendyol","Türkiye"),
+            //    new Company(3,"Sahibinden","Türkiye")
+            //    );
 
             foreach (var item in arr1)
             {
@@ -27,10 +27,10 @@ namespace OOP_Generics.ArrayApp
 
             Console.WriteLine(new string('-',30));
 
-            foreach (var item in arr2)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in arr2)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
         }
 
@@ -44,21 +44,21 @@ namespace OOP_Generics.ArrayApp
 
         private static void GenericCollection()
         {
-            var arr = new Array<char>('a', 'b', 'c');
+            //var arr = new Array<char>('a', 'b', 'c');
 
-            foreach (var item in arr)
-            {
-                Console.WriteLine(item);
-            }
-            var arrayList = new List<int>();
-            arrayList.Add(3);
-            arrayList.Add('a');
+            //foreach (var item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //var arrayList = new List<int>();
+            //arrayList.Add(3);
+            //arrayList.Add('a');
 
-            foreach (var item in arrayList)
-            {
-                Console.WriteLine(item);
-            }
-            Console.WriteLine((int)arrayList[1] * 10);
+            //foreach (var item in arrayList)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            //Console.WriteLine((int)arrayList[1] * 10);
         }
 
         private static void GenericAndCustomType()
@@ -75,12 +75,12 @@ namespace OOP_Generics.ArrayApp
 
         private static void GenericClassDefinition()
         {
-            var arr = new Array<char>('a', 'b', 'c');
+            //var arr = new Array<char>('a', 'b', 'c');
 
-            foreach (var item in arr)
-            {
-                Console.WriteLine(item);
-            }
+            //foreach (var item in arr)
+            //{
+            //    Console.WriteLine(item);
+            //}
         }
     }
 }

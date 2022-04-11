@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Interfaces.InterfaceSeg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP-Generics.ArrayApp", "OOP-Generics.ArrayApp\OOP-Generics.ArrayApp.csproj", "{026386DA-5176-4C87-8A55-3D916472D044}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Generics.Methods", "OOP.Generics.Methods\OOP.Generics.Methods.csproj", "{22F28926-AEDA-464F-A3D0-B0B3008B2946}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{026386DA-5176-4C87-8A55-3D916472D044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{026386DA-5176-4C87-8A55-3D916472D044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{026386DA-5176-4C87-8A55-3D916472D044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F28926-AEDA-464F-A3D0-B0B3008B2946}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
