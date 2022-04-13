@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.Generics.Methods", "OOP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.GenericRepositoryDesignPattern", "OOP.GenericRepositoryDesignPattern\OOP.GenericRepositoryDesignPattern.csproj", "{0B6C663F-A343-4705-8BED-F38613D9617C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP.ADONET", "OOP.ADONET\OOP.ADONET.csproj", "{9530B85B-A6DF-4A78-8684-086A87937235}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{0B6C663F-A343-4705-8BED-F38613D9617C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B6C663F-A343-4705-8BED-F38613D9617C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B6C663F-A343-4705-8BED-F38613D9617C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9530B85B-A6DF-4A78-8684-086A87937235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9530B85B-A6DF-4A78-8684-086A87937235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9530B85B-A6DF-4A78-8684-086A87937235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9530B85B-A6DF-4A78-8684-086A87937235}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
