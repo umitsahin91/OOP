@@ -14,6 +14,45 @@ namespace OOP.ADONET
             //Create();
 
             //(R)ead
+            //Read();
+            //(U)pdate
+            Employee employee = new Employee() {EmployeeId=12, FirstName = "Mehmet", LastName = "Demir" };
+            //Connection
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            using (var conn = new SqlConnection(connectionString))
+            {
+                //conn.ConnectionString = connectionString;
+                try
+                {
+
+                    conn.Open();
+                    //Command
+                    var cmd = new SqlCommand("UPDATE Employees SET FirstName=@FirstName, LastName=@LastName WHERE EmployeeID=@EmployeeId");
+                    cmd.Connection = conn;
+                    cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
+                    cmd.Parameters.AddWithValue("FirstName", employee.FirstName);
+                    cmd.Parameters.AddWithValue("LastName", employee.LastName);
+
+                    var s = cmd.ExecuteNonQuery();
+
+                    Console.WriteLine(s);
+                }
+                catch (Exception ex)
+                {
+
+                    throw new Exception(ex.Message);
+                }
+
+            }
+            //(D)elete
+
+
+
+        }
+
+        private static void Read()
+        {
             var _list = new List<Employee>();
             //Connection
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
@@ -37,11 +76,6 @@ namespace OOP.ADONET
             }
 
             _list.ForEach(e => Console.WriteLine(e));
-            //(U)pdate
-            //(D)elete
-
-
-
         }
 
         private static void Create()
