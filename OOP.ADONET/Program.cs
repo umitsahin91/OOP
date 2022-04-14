@@ -20,69 +20,40 @@ namespace OOP.ADONET
             //Update();
 
             //(D)elete
-            Employee employee = new Employee() { EmployeeId = 12};
-            //Connection
-            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            //Delete();
 
-            using (var conn = new SqlConnection(connectionString))
-            {
-                //conn.ConnectionString = connectionString;
-                try
-                {
+        }
 
-                    conn.Open();
-                    //Command
-                    var cmd = new SqlCommand("DELETE FROM Employees WHERE EmployeeID=@EmployeeId");
-                    cmd.Connection = conn;
-                    cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
+        private static void Delete()
+        {
+            Employee employee = new Employee() { EmployeeId = 1011 };
 
-                    var s = cmd.ExecuteNonQuery();
+            //Command
+            var cmd = new SqlCommand("DELETE FROM Employees WHERE EmployeeID=@EmployeeId");
+            cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
 
-                    Console.WriteLine(s);
-                }
-                catch (Exception ex)
-                {
-
-                    throw new Exception(ex.Message);
-                }
-
-            }
-
-
+            var s = RDMS.SqlNonQuery(cmd);
+            Console.WriteLine(s);
 
         }
 
         private static void Update()
         {
-            Employee employee = new Employee() { EmployeeId = 12, FirstName = "Mehmet", LastName = "Demir" };
-            //Connection
-            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            Employee employee = new Employee() { EmployeeId = 1012, FirstName = "Mehmet", LastName = "Demir" };
 
-            using (var conn = new SqlConnection(connectionString))
-            {
-                //conn.ConnectionString = connectionString;
-                try
-                {
+            //Command
+            var cmd = new SqlCommand("UPDATE Employees SET FirstName=@FirstName, LastName=@LastName WHERE EmployeeID=@EmployeeId");
 
-                    conn.Open();
-                    //Command
-                    var cmd = new SqlCommand("UPDATE Employees SET FirstName=@FirstName, LastName=@LastName WHERE EmployeeID=@EmployeeId");
-                    cmd.Connection = conn;
-                    cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
-                    cmd.Parameters.AddWithValue("FirstName", employee.FirstName);
-                    cmd.Parameters.AddWithValue("LastName", employee.LastName);
+            cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
+            cmd.Parameters.AddWithValue("FirstName", employee.FirstName);
+            cmd.Parameters.AddWithValue("LastName", employee.LastName);
 
-                    var s = cmd.ExecuteNonQuery();
+            var s = RDMS.SqlNonQuery(cmd);
+            Console.WriteLine(s);
 
-                    Console.WriteLine(s);
-                }
-                catch (Exception ex)
-                {
 
-                    throw new Exception(ex.Message);
-                }
 
-            }
+
         }
 
         private static void Read()
