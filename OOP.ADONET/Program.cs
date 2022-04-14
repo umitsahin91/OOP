@@ -15,8 +15,46 @@ namespace OOP.ADONET
 
             //(R)ead
             //Read();
+
             //(U)pdate
-            Employee employee = new Employee() {EmployeeId=12, FirstName = "Mehmet", LastName = "Demir" };
+            //Update();
+
+            //(D)elete
+            Employee employee = new Employee() { EmployeeId = 12};
+            //Connection
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            using (var conn = new SqlConnection(connectionString))
+            {
+                //conn.ConnectionString = connectionString;
+                try
+                {
+
+                    conn.Open();
+                    //Command
+                    var cmd = new SqlCommand("DELETE FROM Employees WHERE EmployeeID=@EmployeeId");
+                    cmd.Connection = conn;
+                    cmd.Parameters.AddWithValue("EmployeeID", employee.EmployeeId);
+
+                    var s = cmd.ExecuteNonQuery();
+
+                    Console.WriteLine(s);
+                }
+                catch (Exception ex)
+                {
+
+                    throw new Exception(ex.Message);
+                }
+
+            }
+
+
+
+        }
+
+        private static void Update()
+        {
+            Employee employee = new Employee() { EmployeeId = 12, FirstName = "Mehmet", LastName = "Demir" };
             //Connection
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Northwind;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
 
@@ -45,10 +83,6 @@ namespace OOP.ADONET
                 }
 
             }
-            //(D)elete
-
-
-
         }
 
         private static void Read()
