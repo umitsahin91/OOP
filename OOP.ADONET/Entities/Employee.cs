@@ -1,4 +1,4 @@
-﻿namespace OOP.ADONET
+﻿namespace OOP.ADONET.Entities
 {
     public  class Employee
     {
