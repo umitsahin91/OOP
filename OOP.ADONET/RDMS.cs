@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace OOP.ADONET
@@ -24,6 +25,27 @@ namespace OOP.ADONET
                 throw new Exception(ex.Message);
             }
            
+        }
+
+        public static DataSet SqlReader(SqlCommand cmd)
+        {
+            try
+            {
+                using (var conn=new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    cmd.Connection = conn;
+                    var sda = new SqlDataAdapter(cmd);
+                    var ds = new DataSet();
+                    sda.Fill(ds);
+                    return ds;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new Exception(ex.Message);
+            }
         }
     }
 }
