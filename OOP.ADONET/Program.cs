@@ -10,12 +10,15 @@ namespace OOP.ADONET
     {
         static void Main(string[] args)
         {
-            var _employeeDai = new EmployeeDal();
-            var _list = _employeeDai.GetAll();
-            foreach (var employee in _list)
-            {
-                Console.WriteLine(employee);
-            }
+            var _productDal = new ProductDal();
+            //var product = new Product { ProductName = "Tea", UnitPrice = 30, UnitsInStock = 1000 };
+            //_productDal.Add(product);
+            // _productDal.Delete(new Product { ProductId=78});
+            _productDal.Update(new Product { ProductId = 77,UnitPrice=45,UnitsInStock=1000});
+
+            _productDal.GetAll().ForEach(p => Console.WriteLine($"{p.ProductId} {p.ProductName} {p.UnitPrice}" ));
+
+            
         }
 
         private static void Delete()

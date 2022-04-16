@@ -38,7 +38,7 @@ namespace OOP.ADONET.DAL.Concrete.ADONET
                         ProductId = int.Parse(item[0].ToString()),
                         ProductName = item[1].ToString(),
                         UnitPrice = decimal.Parse(item[2].ToString()),
-                        UnitsInStok = int.Parse(item[3].ToString())
+                        UnitsInStock = int.Parse(item[3].ToString())
                     }
                     );
             }
