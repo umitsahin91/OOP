@@ -1,6 +1,5 @@
 ﻿using OOP.ADONET.DAL.Abtract;
 using OOP.ADONET.Entities;
-using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -8,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP.ADONET.DAL.Concrete
+namespace OOP.ADONET.DAL.Concrete.ADONET
 {
     public class EmployeeDal : IEmployeeDal
     {
